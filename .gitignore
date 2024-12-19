@@ -1,0 +1,42 @@
+# Foldery i pliki generowane przez środowisko
+bin/
+obj/
+.vscode/
+.idea/
+
+# Pliki konfiguracyjne specyficzne dla użytkownika
+*.user
+*.rsuser
+
+# Pliki systemowe
+*.DS_Store
+Thumbs.db
+
+# Pliki tymczasowe i cache
+*.log
+*.vs/
+ReSharper/
+*.suo
+*.ncrunchproject
+*.ncrunchsolution
+.project
+.cache
+*.ide.*
+*.sln.docstates
+
+# Pakiety NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Pliki tymczasowe publikacji
+.publish/
+artifacts/
+
+# Konfiguracje środowiskowe
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+
+node_modules/
+.astro/
