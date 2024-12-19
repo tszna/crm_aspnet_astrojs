@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using backendCRM.Models;
-using backendCRM.Data.Configurations;
+using backend.Models;
+using backend.Data.Configurations;
 
-namespace backendCRM.Data
+namespace backend.Data
 {
     public class ApplicationDbContext : DbContext
     {

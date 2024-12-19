@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace backendCRM.Models.DTOs
+namespace backend.Models.DTOs
 {
     public class DayInfo
     {

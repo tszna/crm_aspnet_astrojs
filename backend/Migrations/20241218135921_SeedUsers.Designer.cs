@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using backendCRM.Data;
+using backend.Data;
 
 #nullable disable
 
-namespace backendCRM.Migrations
+namespace backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20241218135921_SeedUsers")]
@@ -22,7 +22,7 @@ namespace backendCRM.Migrations
                 .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("backendCRM.Models.Absence", b =>
+            modelBuilder.Entity("backend.Models.Absence", b =>
                 {
                     b.Property<ulong>("Id")
                         .ValueGeneratedOnAdd()
@@ -59,7 +59,7 @@ namespace backendCRM.Migrations
                     b.ToTable("absences", (string)null);
                 });
 
-            modelBuilder.Entity("backendCRM.Models.TimeSession", b =>
+            modelBuilder.Entity("backend.Models.TimeSession", b =>
                 {
                     b.Property<ulong>("Id")
                         .ValueGeneratedOnAdd()
@@ -99,7 +99,7 @@ namespace backendCRM.Migrations
                     b.ToTable("time_sessions", (string)null);
                 });
 
-            modelBuilder.Entity("backendCRM.Models.User", b =>
+            modelBuilder.Entity("backend.Models.User", b =>
                 {
                     b.Property<ulong>("Id")
                         .ValueGeneratedOnAdd()
@@ -174,9 +174,9 @@ namespace backendCRM.Migrations
                         });
                 });
 
-            modelBuilder.Entity("backendCRM.Models.Absence", b =>
+            modelBuilder.Entity("backend.Models.Absence", b =>
                 {
-                    b.HasOne("backendCRM.Models.User", "User")
+                    b.HasOne("backend.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -185,9 +185,9 @@ namespace backendCRM.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("backendCRM.Models.TimeSession", b =>
+            modelBuilder.Entity("backend.Models.TimeSession", b =>
                 {
-                    b.HasOne("backendCRM.Models.User", "User")
+                    b.HasOne("backend.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

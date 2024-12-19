@@ -1,4 +1,4 @@
-namespace backendCRM.Models.DTOs
+namespace backend.Models.DTOs
 {
     public class RegisterDto
     {

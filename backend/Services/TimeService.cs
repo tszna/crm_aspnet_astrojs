@@ -1,10 +1,10 @@
 using System;
 using Microsoft.EntityFrameworkCore;
-using backendCRM.Models;
-using backendCRM.Models.DTOs;
-using backendCRM.Data;
+using backend.Models;
+using backend.Models.DTOs;
+using backend.Data;
 
-namespace backendCRM.Services
+namespace backend.Services
 {
     public interface ITimeService
     {

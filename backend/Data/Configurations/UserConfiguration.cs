@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using backendCRM.Models;
+using backend.Models;
 using BCrypt.Net;
 
-namespace backendCRM.Data.Configurations
+namespace backend.Data.Configurations
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {

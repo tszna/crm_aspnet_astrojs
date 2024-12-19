@@ -1,4 +1,4 @@
-namespace backendCRM.Models;
+namespace backend.Models;
 
 public class ErrorViewModel
 {

@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace backendCRM.Models
+namespace backend.Models
 {
     [Table("users")]
     public class User

@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using backendCRM.Services;
-using backendCRM.Models;
-using backendCRM.Models.DTOs;
-using backendCRM.Data;
+using backend.Services;
+using backend.Models;
+using backend.Models.DTOs;
+using backend.Data;
 using System.Security.Claims;
 
-namespace backendCRM.Controllers
+namespace backend.Controllers
 {
     [Authorize]
     [ApiController]

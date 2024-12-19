@@ -3,9 +3,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
-using backendCRM.Models;
+using backend.Models;
 
-namespace backendCRM.Services
+namespace backend.Services
 {
     public interface IAuthService
     {

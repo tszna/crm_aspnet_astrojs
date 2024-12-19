@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
-using backendCRM.Models;
-using backendCRM.Models.DTOs;
-using backendCRM.Services;
-using backendCRM.Data;
+using backend.Models;
+using backend.Models.DTOs;
+using backend.Services;
+using backend.Data;
 using System.Security.Claims;
 
-namespace backendCRM.Controllers
+namespace backend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
